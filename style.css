@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    border: 0;
+    padding: 0;
+    font-size: 100%;
+    box-sizing: border-box;
+}
+.parent{
+    background-color: rgb(241, 220, 222);
+    width: 500px;
+    height: 300px;
+    border: 2px solid black;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+}
+.child{
+    background-color: rgb(210, 179, 239);
+    color: white;
+    text-align: center;
+    width: 100px;
+    height: 100px;
+    font-size: 20px;
+    line-height: 90px;
+    
+}
