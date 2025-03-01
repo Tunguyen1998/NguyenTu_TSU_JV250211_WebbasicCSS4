@@ -6,24 +6,25 @@
     box-sizing: border-box;
 }
 .parent{
-    background-color: rgb(241, 220, 222);
-    width: 500px;
-    height: 300px;
+    background-color: rgb(243, 227, 230);
     border: 2px solid black;
+    margin-top: 50px;
+    margin-left: 50px;
+    width: 900px;
+    height: 150px;
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-
-}
-.child{
-    background-color: rgb(210, 179, 239);
-    color: white;
-    text-align: center;
-    width: 100px;
-    height: 100px;
-    font-size: 20px;
-    line-height: 90px;
+    align-content: center;
     
 }
+.parent > div {
+    background-color: rgb(208, 175, 114);
+    color: white;
+    margin: 10px;
+    width: 200px;
+    height: 50px;
+    font-size: 20px;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 5px;
+  }
