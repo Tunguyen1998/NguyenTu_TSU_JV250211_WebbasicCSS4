@@ -1,29 +1,93 @@
 *{
     margin: 0;
-    border: 0;
     padding: 0;
-    font-size: 100%;
+    border: 0;
     box-sizing: border-box;
+    flex-wrap: wrap;
+    
 }
 .parent{
-    background-color: rgb(241, 220, 222);
-    width: 500px;
-    height: 300px;
-    border: 2px solid black;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: 300px 350px 300px;
+    gap: 10px;
+    margin: 20px;
+    width: 950px;
+    
 
 }
-.child{
-    background-color: rgb(210, 179, 239);
-    color: white;
-    text-align: center;
-    width: 100px;
-    height: 100px;
-    font-size: 20px;
-    line-height: 90px;
+.parent > div{
+    color:white;
+    text-align: left;
+    font-size: 15px;
+}
+.child1{
+    grid-column: 1/ 4;
+    background-image: url("https://ballooningcanterbury.com/wp-content/uploads/2019/09/ballooning-canterbury11.jpg");
+    height: 300px;
+    background-position: -150px; 
+}
+.child1 h1{
+    margin-left: 15px;
+    margin-top: 150px;
+    line-height: 100px;
+    font-weight: bold;
+}
+.child1 p{
+    margin-left: 15px;
+}
+.child2{
+    background-image: url(https://www.skywaltz.com/wp-content/uploads/2023/08/Untitled-1-2.png);
     
+}
+.child2 h2,.child3 h2,.child4 h2{
+    color: rgb(120, 114, 114);
+    margin-top: 50px;
+    margin-left: 15px;
+    line-height: 100px;
+    font-size: 21px;
+}
+.child2 p,.child3 p,.child4 p{
+    margin-left: 15px;
+}
+.child3{
+    background-image: url(https://images.pexels.com/photos/2662116/pexels-photo-2662116.jpeg?cs=srgb&dl=pexels-jaime-reimer-1376930-2662116.jpg&fm=jpg);
+    
+}
+.child4{
+    background-image: url(https://as2.ftcdn.net/v2/jpg/06/20/25/87/1000_F_620258752_9QvKX0OcNmuCT0hXLFCiqtL4sNTxMSaI.jpg);
+}
+.child5{
+    background-image: url(https://media.istockphoto.com/id/517188688/photo/mountain-landscape.jpg?s=612x612&w=0&k=20&c=A63koPKaCyIwQWOTFBRWXj_PwCrR4cEoOw2S9Q7yVl8=)
+}
+.child6{
+    background-color: red;
+}
+.child7{
+    background-image: url(https://as2.ftcdn.net/v2/jpg/07/59/05/53/1000_F_759055391_FALUjBoAHR3fyiztWSCd7WhuOmdb6Eia.jpg);
+}
+.child2,.child3,.child4,.child5,.child7{
+    height: 200px;
+    background-size: 120%;
+
+}
+.child5 h2, .child7 h2{
+    margin-top: 50px;
+    margin-left: 20px;
+}
+.child5 p, .child7 p{
+    line-height: 100px;
+    margin-left: 20px;
+
+}
+.child6 p{
+    text-align: center;
+    margin-top: 70px ;
+}
+button{
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+    width: 90%;
+    margin-left: 20px;
+    margin-top: 20px;
 }
